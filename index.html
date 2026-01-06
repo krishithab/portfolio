@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Portfolio Showcase - Brown Shades &amp; Shadows</title>
+    <meta name="description"
+        content="Portfolio of Krishitha Boggarapu, an AI/ML Undergraduate student specializing in Python, Deep Learning, and Cloud Computing.">
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#8c5a3c",
+                        "primary-dark": "#704830",
+                        "background-light": "#f9f6f3",
+                        "background-dark": "#2a211c",
+                        "text-main": "#3e2c22",
+                        "text-secondary": "#7c6356",
+                        "border-color": "#eaddd5",
+                        "card-bg": "#ffffff"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        "soft": "0 4px 20px -2px rgba(140, 90, 60, 0.1)",
+                        "soft-lg": "0 10px 40px -4px rgba(140, 90, 60, 0.15)",
+                        "glow": "0 0 15px rgba(140, 90, 60, 0.3)"
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-text-main dark:text-[#f3ede7] font-display min-h-screen flex flex-col overflow-x-hidden selection:bg-primary/30">
+    <header
+        class="relative w-full border-b border-border-color bg-background-light/95 backdrop-blur-sm dark:bg-background-dark/95 shadow-sm">
+        <div class="layout-container flex h-full grow flex-col">
+            <div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-4">
+                <div class="layout-content-container flex w-full max-w-[960px] items-center justify-between">
+                    <a href="index.html"
+                        class="flex items-center gap-4 text-text-main dark:text-white hover:opacity-80 transition-opacity">
+                        <div class="size-6 text-primary drop-shadow-sm">
+                            <svg class="size-full" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Krishitha Boggarapu</h2>
+                    </a>
+                    <nav class="hidden md:flex items-center gap-8">
+                        <a class="text-sm font-bold leading-normal text-primary" href="index.html">Home</a>
+
+                        <a class="text-sm font-medium leading-normal hover:text-primary transition-colors"
+                            href="service_offered.html">Services</a>
+                        <a class="text-sm font-medium leading-normal hover:text-primary transition-colors"
+                            href="about_me.html">About</a>
+                        <a class="text-sm font-medium leading-normal hover:text-primary transition-colors"
+                            href="contact_me.html">Contact</a>
+                    </nav>
+                    <div class="flex items-center gap-4">
+                        <a href="Resume26.pdf" target="_blank"
+                            class="hidden md:flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary-dark transition-all shadow-md hover:shadow-lg">
+                            <span class="truncate">Resume</span>
+                        </a>
+                        <button
+                            class="md:hidden p-2 text-text-main dark:text-white hover:bg-black/5 dark:hover:bg-white/10 rounded-lg transition-colors">
+                            <span class="material-symbols-outlined text-3xl">menu</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="flex-1 flex flex-col items-center w-full pb-20">
+        <section class="w-full px-4 md:px-10 lg:px-40 py-12 md:py-20 flex justify-center">
+            <div class="max-w-[960px] w-full">
+                <div class="@container">
+                    <div class="flex flex-col gap-10 md:gap-16 md:flex-row items-center">
+                        <div class="w-32 h-32 mx-auto rounded-full md:w-1/2 md:h-auto md:aspect-square bg-center bg-no-repeat bg-cover shadow-soft-lg order-1 md:order-2 border-4 border-white dark:border-white/10 md:rounded-2xl"
+                            data-alt="Portrait of Krishitha Boggarapu" style='background-image: url("profile.jpg");'>
+                        </div>
+                        <div class="flex flex-col gap-6 md:w-1/2 order-2 md:order-1 text-center md:text-left">
+                            <div class="flex flex-col gap-4">
+                                <span
+                                    class="text-primary font-bold text-base tracking-widest uppercase bg-primary/10 w-fit px-3 py-1 rounded-full mx-auto md:mx-0">Portfolio</span>
+                                <h1
+                                    class="text-text-main dark:text-white text-3xl md:text-4xl lg:text-5xl font-black leading-[1.15] tracking-tight drop-shadow-sm">
+                                    Krishitha Boggarapu
+                                </h1>
+                                <h2
+                                    class="text-text-secondary dark:text-gray-300 text-xl md:text-2xl font-semibold leading-tight">
+                                    Undergraduate Student specializing in Artificial Intelligence and Machine Learning
+                                </h2>
+                                <p
+                                    class="text-text-main/80 dark:text-white/80 text-lg font-normal leading-relaxed max-w-[480px] mx-auto md:mx-0 mt-2">
+                                    Aspiring AI Engineer with a strong foundation in predictive modeling and neural
+                                    networks. I am dedicated to leveraging data-driven technologies to solve complex
+                                    real-world challenges.
+                                </p>
+                            </div>
+                            <div class="flex flex-wrap gap-4 justify-center md:justify-start pt-4">
+                                <a href="portfolio.html"
+                                    class="flex cursor-pointer items-center justify-center rounded-lg h-12 px-8 bg-primary text-white text-base font-bold transition-all hover:bg-primary-dark hover:-translate-y-0.5 active:translate-y-0 shadow-lg shadow-primary/30">
+                                    <span>View Portfolio</span>
+                                </a>
+                                <a href="contact_me.html"
+                                    class="flex cursor-pointer items-center justify-center rounded-lg h-12 px-8 bg-white dark:bg-white/5 border border-border-color text-text-main dark:text-white text-base font-bold hover:bg-background-light dark:hover:bg-white/10 transition-all hover:-translate-y-0.5 shadow-md hover:shadow-lg">
+                                    <span>Contact Me</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="w-full px-4 md:px-10 lg:px-40 py-20 flex justify-center bg-white dark:bg-white/5 shadow-[inset_0_4px_20px_-4px_rgba(0,0,0,0.05)] mt-10">
+            <div class="max-w-[960px] w-full flex flex-col md:flex-row gap-12">
+                <div class="flex flex-col gap-6 md:w-1/3">
+                    <h2 class="text-text-main dark:text-white text-3xl font-black leading-tight tracking-tight">
+                        Technical Expertise
+                    </h2>
+                    <p class="text-text-main/80 dark:text-white/80 text-base leading-relaxed">
+                        I specialize in building intelligent algorithms and robust data pipelines that translate complex
+                        datasets into actionable insights.
+                    </p>
+                    <a class="text-primary font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all group"
+                        href="skillscertificates.html">
+                        Explore my skills <span
+                            class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
+                    </a>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:w-2/3">
+                    <div
+                        class="flex flex-col gap-4 p-6 rounded-xl bg-background-light dark:bg-background-dark/50 shadow-sm hover:shadow-soft-lg hover:-translate-y-1 transition-all duration-300 border border-transparent hover:border-primary/20">
+                        <div
+                            class="size-12 rounded-full bg-white dark:bg-white/10 shadow-sm flex items-center justify-center text-primary">
+                            <span class="material-symbols-outlined text-2xl">psychology</span>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <h3 class="text-text-main dark:text-white text-lg font-bold">Artificial Intelligence</h3>
+                            <p class="text-text-secondary text-sm leading-relaxed">Designing intelligent agents and
+                                adaptive systems capable of autonomous decision-making.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="flex flex-col gap-4 p-6 rounded-xl bg-background-light dark:bg-background-dark/50 shadow-sm hover:shadow-soft-lg hover:-translate-y-1 transition-all duration-300 border border-transparent hover:border-primary/20">
+                        <div
+                            class="size-12 rounded-full bg-white dark:bg-white/10 shadow-sm flex items-center justify-center text-primary">
+                            <span class="material-symbols-outlined text-2xl">analytics</span>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <h3 class="text-text-main dark:text-white text-lg font-bold">Data Science</h3>
+                            <p class="text-text-secondary text-sm leading-relaxed">Uncovering profound patterns through
+                                statistical analysis, data mining, and visualization.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="flex flex-col gap-4 p-6 rounded-xl bg-background-light dark:bg-background-dark/50 shadow-sm hover:shadow-soft-lg hover:-translate-y-1 transition-all duration-300 border border-transparent hover:border-primary/20">
+                        <div
+                            class="size-12 rounded-full bg-white dark:bg-white/10 shadow-sm flex items-center justify-center text-primary">
+                            <span class="material-symbols-outlined text-2xl">terminal</span>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <h3 class="text-text-main dark:text-white text-lg font-bold">Machine Learning</h3>
+                            <p class="text-text-secondary text-sm leading-relaxed">Building and deploying scalable
+                                models using Python, TensorFlow, and PyTorch.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </section>
+
+        <!-- Selected Projects Section -->
+        <section class="w-full px-4 md:px-10 lg:px-40 py-20 bg-background-light dark:bg-background-dark">
+            <div class="max-w-[1200px] mx-auto flex flex-col gap-12">
+                <div class="flex flex-col gap-4 text-center md:text-left">
+                    <h2 class="text-text-main dark:text-white text-3xl font-black leading-tight tracking-tight">
+                        Selected Projects
+                    </h2>
+                    <p class="text-text-main/80 dark:text-white/80 text-base leading-relaxed max-w-2xl">
+                        A showcase of my work in Artificial Intelligence, Machine Learning, and Web Development.
+                    </p>
+                </div>
+
+                <!-- ECOfriends Hero -->
+                <div class="@container">
+                    <div class="flex flex-col gap-6 py-4 @[480px]:gap-8 @[864px]:flex-row items-center">
+                        <div class="w-full flex flex-col gap-6 @[480px]:gap-8 justify-center items-center text-center">
+                            <div class="flex flex-col gap-4 max-w-3xl">
+                                <h3
+                                    class="text-text-main dark:text-white text-3xl font-black leading-tight tracking-[-0.033em] @[480px]:text-4xl drop-shadow-sm">
+                                    Engineering AI Solutions for the Real World
+                                </h3>
+                                <p class="text-text-secondary dark:text-[#b0a69e] text-lg font-normal leading-relaxed">
+                                    Undergraduate student specializing in Artificial Intelligence &amp; Machine
+                                    Learning. I build intelligent systems, from disaster management tools to community
+                                    platforms.
+                                </p>
+                            </div>
+                            <div class="flex gap-4">
+                                <a href="portfolio.html"
+                                    class="flex cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 bg-primary text-[#fcfaf8] text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary-dark transition-colors shadow-md hover:shadow-lg hover:-translate-y-0.5 transform duration-200">
+                                    <span class="truncate">View Projects</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects Grid -->
+                <div
+                    class="flex md:grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 overflow-x-auto md:overflow-visible snap-x snap-mandatory pb-6 md:pb-0 scrollo">
+                    <!-- EchoAI -->
+                    <div
+                        class="min-w-[85vw] md:min-w-0 snap-center group flex flex-col bg-white dark:bg-[#2d2620] rounded-2xl shadow-soft hover:shadow-soft-lg transition-all duration-300 overflow-hidden h-full border border-transparent hover:border-primary/20">
+                        <div class="relative w-full aspect-[16/10] overflow-hidden bg-[#e8e0d9] dark:bg-[#3a2e25]">
+                            <div class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform duration-700 group-hover:scale-110"
+                                data-alt="Dashboard view of EchoAI customer support automation platform"
+                                style='background-image: url("images/echo-ai.jpg");'>
+                            </div>
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-300">
+                            </div>
+                            <div class="absolute bottom-4 left-4">
+                                <span
+                                    class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-white/90 text-primary shadow-sm backdrop-blur-sm">
+                                    AI &amp; Cloud
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col flex-1 p-6">
+                            <h3
+                                class="text-[#3e2f26] dark:text-white text-xl font-bold leading-tight group-hover:text-primary transition-colors mb-2">
+                                ECHO AI – Disaster Management System</h3>
+                            <p
+                                class="text-text-secondary dark:text-[#b0a69e] text-sm leading-relaxed mb-6 line-clamp-3">
+                                A predictive system utilizing Vertex AI and Google Cloud Platform to analyze data and
+                                forecast potential disaster zones.
+                            </p>
+                            <div class="mt-auto">
+                                <a class="inline-flex items-center gap-2 text-primary font-bold text-sm hover:underline decoration-2 underline-offset-4"
+                                    href="https://github.com/Krishithab" target="_blank">
+                                    View Details <span class="material-symbols-outlined text-lg">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recipe Finder -->
+                    <div
+                        class="min-w-[85vw] md:min-w-0 snap-center group flex flex-col bg-white dark:bg-[#2d2620] rounded-2xl shadow-soft hover:shadow-soft-lg transition-all duration-300 overflow-hidden h-full border border-transparent hover:border-primary/20">
+                        <div class="relative w-full aspect-[16/10] overflow-hidden bg-[#e8e0d9] dark:bg-[#3a2e25]">
+                            <div class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform duration-700 group-hover:scale-110"
+                                data-alt="Recipe Finder application showing ingredient detection"
+                                style='background-image: url("images/recipe-finder.jpg");'>
+                            </div>
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-300">
+                            </div>
+                            <div class="absolute bottom-4 left-4">
+                                <span
+                                    class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-white/90 text-primary shadow-sm backdrop-blur-sm">
+                                    Algorithm
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col flex-1 p-6">
+                            <h3
+                                class="text-[#3e2f26] dark:text-white text-xl font-bold leading-tight group-hover:text-primary transition-colors mb-2">
+                                Automated Timetable Conflict Resolver</h3>
+                            <p
+                                class="text-text-secondary dark:text-[#b0a69e] text-sm leading-relaxed mb-6 line-clamp-3">
+                                An intelligent algorithm-based tool designed to automatically detect scheduling
+                                conflicts in academic timetables.
+                            </p>
+                            <div class="mt-auto">
+                                <a class="inline-flex items-center gap-2 text-primary font-bold text-sm hover:underline decoration-2 underline-offset-4"
+                                    href="https://github.com/Krishithab" target="_blank">
+                                    View Details <span class="material-symbols-outlined text-lg">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Intelligent Triage -->
+                    <div
+                        class="min-w-[85vw] md:min-w-0 snap-center group flex flex-col bg-white dark:bg-[#2d2620] rounded-2xl shadow-soft hover:shadow-soft-lg transition-all duration-300 overflow-hidden h-full border border-transparent hover:border-primary/20">
+                        <div class="relative w-full aspect-[16/10] overflow-hidden bg-[#e8e0d9] dark:bg-[#3a2e25]">
+                            <div class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform duration-700 group-hover:scale-110"
+                                data-alt="Intelligent Triage Dispatcher system interface"
+                                style='background-image: url("images/intelligent-triage.jpg");'>
+                            </div>
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-300">
+                            </div>
+                            <div class="absolute bottom-4 left-4">
+                                <span
+                                    class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-white/90 text-primary shadow-sm backdrop-blur-sm">
+                                    Web Dev
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col flex-1 p-6">
+                            <h3
+                                class="text-[#3e2f26] dark:text-white text-xl font-bold leading-tight group-hover:text-primary transition-colors mb-2">
+                                Community Issue Tracker</h3>
+                            <p
+                                class="text-text-secondary dark:text-[#b0a69e] text-sm leading-relaxed mb-6 line-clamp-3">
+                                A web-based platform empowering citizens to report local infrastructure problems with
+                                real-time tracking.
+                            </p>
+                            <div class="mt-auto">
+                                <a class="inline-flex items-center gap-2 text-primary font-bold text-sm hover:underline decoration-2 underline-offset-4"
+                                    href="https://github.com/Krishithab" target="_blank">
+                                    View Details <span class="material-symbols-outlined text-lg">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-center mt-4">
+                    <a href="https://github.com/Krishithab" target="_blank"
+                        class="flex cursor-pointer items-center justify-center rounded-lg h-12 px-8 border border-primary text-primary hover:bg-primary/5 text-base font-bold transition-all hover:-translate-y-0.5">
+                        View All Projects
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer
+        class="w-full border-t border-border-color bg-background-light dark:bg-background-dark py-12 px-4 md:px-10 lg:px-40 flex justify-center shadow-[0_-4px_20px_-4px_rgba(0,0,0,0.05)]">
+        <div class="max-w-[960px] w-full flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex flex-col gap-3 items-center md:items-start">
+                <div class="flex items-center gap-2 text-text-main dark:text-white">
+                    <div class="size-5 text-primary">
+                        <svg class="size-full" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <span class="font-bold text-lg tracking-tight">Krishitha Boggarapu</span>
+                </div>
+                <p class="text-text-secondary text-sm">© 2026 Krishitha Boggarapu. All rights reserved.</p>
+            </div>
+            <div class="flex items-center gap-6">
+                <a class="text-text-main dark:text-white hover:text-primary transition-colors transform hover:scale-110"
+                    href="#">
+                    <span class="sr-only">Twitter</span>
+                    <svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84">
+                        </path>
+                    </svg>
+                </a>
+                <a class="text-text-main dark:text-white hover:text-primary transition-colors transform hover:scale-110"
+                    href="#">
+                    <span class="sr-only">LinkedIn</span>
+                    <svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path clip-rule="evenodd"
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                            fill-rule="evenodd"></path>
+                    </svg>
+                </a>
+                <a class="text-text-main dark:text-white hover:text-primary transition-colors transform hover:scale-110"
+                    href="#">
+                    <span class="sr-only">GitHub</span>
+                    <svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path clip-rule="evenodd"
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.753 1.003-1.56 2.083-2.354 3.236-3.832.227-6.903.046-7.115.03v.006zm3.576 6.816c.795-.084 4.397-.506 8.791-.97 1.258 1.528 2.378 2.657 2.66 2.929a8.618 8.618 0 01-11.451-1.96zM12 20.524c-1.127 0-2.196-.282-3.14-.775.318-.328 1.493-1.527 2.825-3.235a51.644 51.644 0 003.883-1.042c.414 1.968.675 3.978.736 4.908a8.636 8.636 0 01-4.304.144zm7.25-2.07c-.453-.94-1.205-2.613-1.58-5.32 2.765-.347 5.603.22 5.864.275-.54 2.29-2.008 4.195-4.284 5.045z"
+                            fill-rule="evenodd"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="mobile-menu-overlay"
+        class="fixed inset-0 z-40 hidden bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-md transition-all duration-300">
+        <div
+            class="flex flex-col items-center justify-center h-full gap-8 text-2xl font-bold text-text-main dark:text-white">
+            <button id="close-menu-btn"
+                class="absolute top-6 right-6 p-2 text-primary hover:bg-primary/10 rounded-full transition-colors">
+                <span class="material-symbols-outlined text-3xl">close</span>
+            </button>
+
+            <a href="index.html" class="hover:text-primary transition-colors">Home</a>
+
+            <a href="service_offered.html" class="hover:text-primary transition-colors">Services</a>
+            <a href="about_me.html" class="hover:text-primary transition-colors">About</a>
+            <a href="contact_me.html" class="hover:text-primary transition-colors">Contact</a>
+            <a href="Resume26.pdf" target="_blank" class="text-primary mt-4 flex items-center gap-2">
+                <span class="material-symbols-outlined">download</span> Resume
+            </a>
+        </div>
+    </div>
+
+    <!-- Sticky Bottom Navbar -->
+    <nav
+        class="md:hidden fixed bottom-0 left-0 w-full bg-white/95 dark:bg-[#2a211c]/95 backdrop-blur-lg border-t border-gray-200 dark:border-gray-800 z-50 pb-safe">
+        <div class="flex justify-around items-center h-16">
+            <a href="index.html" class="flex flex-col items-center justify-center w-full h-full text-primary">
+                <span class="material-symbols-outlined text-2xl">home</span>
+                <span class="text-[10px] font-medium mt-1">Home</span>
+            </a>
+            <a href="service_offered.html"
+                class="flex flex-col items-center justify-center w-full h-full text-text-main dark:text-gray-400 hover:text-primary">
+                <span class="material-symbols-outlined text-2xl">design_services</span>
+                <span class="text-[10px] font-medium mt-1">Services</span>
+            </a>
+            <a href="skillscertificates.html"
+                class="flex flex-col items-center justify-center w-full h-full text-text-main dark:text-gray-400 hover:text-primary">
+                <span class="material-symbols-outlined text-2xl">workspace_premium</span>
+                <span class="text-[10px] font-medium mt-1">Skills</span>
+            </a>
+            <a href="contact_me.html"
+                class="flex flex-col items-center justify-center w-full h-full text-text-main dark:text-gray-400 hover:text-primary">
+                <span class="material-symbols-outlined text-2xl">mail</span>
+                <span class="text-[10px] font-medium mt-1">Contact</span>
+            </a>
+        </div>
+    </nav>
+
+    <script>
+        const menuBtn = document.querySelector('button.md\\:hidden'); // Selects the hamburger button in your header
+        const closeBtn = document.getElementById('close-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu-overlay');
+
+        function toggleMenu() {
+            mobileMenu.classList.toggle('hidden');
+            document.body.classList.toggle('overflow-hidden'); // Prevents background scrolling
+        }
+
+        if (menuBtn) menuBtn.addEventListener('click', toggleMenu);
+        if (closeBtn) closeBtn.addEventListener('click', toggleMenu);
+    </script>
+</body>
+
+</html>
