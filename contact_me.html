@@ -60,34 +60,42 @@
 
 <body class="bg-background-light text-text-main font-display min-h-screen flex flex-col">
     <header
-        class="relative z-50 w-full border-b border-solid border-border-subtle bg-background-light/95 backdrop-blur-sm shadow-[0_2px_15px_-3px_rgba(0,0,0,0.03)]">
-        <div
-            class="layout-container max-w-[1200px] mx-auto px-4 sm:px-8 xl:px-40 h-16 flex items-center justify-between">
-            <div class="flex items-center gap-4 text-text-main">
-                <div class="size-8 flex items-center justify-center text-primary drop-shadow-sm">
-                    <span class="material-symbols-outlined" style="font-size: 32px;">design_services</span>
-                </div>
-                <h2 class="text-text-main text-lg font-bold leading-tight tracking-[-0.015em]">Portfolio</h2>
-            </div>
-            <nav class="hidden md:flex items-center gap-9">
-                <a class="text-text-main text-sm font-medium hover:text-primary transition-colors"
-                    href="index.html">Home</a>
+        class="relative w-full border-b border-border-color bg-background-light/95 backdrop-blur-sm dark:bg-background-dark/95 shadow-sm">
+        <div class="layout-container flex h-full grow flex-col">
+            <div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-4">
+                <div class="layout-content-container flex w-full max-w-[960px] items-center justify-between">
+                    <a href="index.html"
+                        class="flex items-center gap-4 text-text-main dark:text-white hover:opacity-80 transition-opacity">
+                        <div class="size-6 text-primary drop-shadow-sm">
+                            <svg class="size-full" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Krishitha Boggarapu</h2>
+                    </a>
+                    <nav class="hidden md:flex items-center gap-8">
+                        <a class="text-sm font-medium leading-normal hover:text-primary transition-colors"
+                            href="index.html">Home</a>
 
-                <a class="text-text-main text-sm font-medium hover:text-primary transition-colors"
-                    href="service_offered.html">Services</a>
-                <a class="text-text-main text-sm font-medium hover:text-primary transition-colors"
-                    href="about_me.html">About</a>
-                <a class="text-primary text-sm font-bold border-b-2 border-primary/20 pb-0.5"
-                    href="contact_me.html">Contact</a>
-            </nav>
-            <div class="flex items-center gap-4">
-                <button class="md:hidden p-2 text-text-main hover:bg-accent-light rounded-lg transition-colors">
-                    <span class="material-symbols-outlined">menu</span>
-                </button>
-                <a href="contact_me.html"
-                    class="hidden md:flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary text-[#fcfaf8] text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary-dark transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5 duration-200">
-                    <span class="truncate">Hire Me</span>
-                </a>
+                        <a class="text-sm font-medium leading-normal hover:text-primary transition-colors"
+                            href="service_offered.html">Services</a>
+                        <a class="text-sm font-medium leading-normal hover:text-primary transition-colors"
+                            href="about_me.html">About</a>
+                        <a class="text-sm font-bold leading-normal text-primary" href="contact_me.html">Contact</a>
+                    </nav>
+                    <div class="flex items-center gap-4">
+                        <a href="Resume26.pdf" target="_blank"
+                            class="hidden md:flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary-dark transition-all shadow-md hover:shadow-lg">
+                            <span class="truncate">Resume</span>
+                        </a>
+                        <button
+                            class="md:hidden p-2 text-text-main dark:text-white hover:bg-black/5 dark:hover:bg-white/10 rounded-lg transition-colors">
+                            <span class="material-symbols-outlined text-3xl">menu</span>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
